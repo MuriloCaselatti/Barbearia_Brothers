@@ -355,6 +355,7 @@ i {
   -o-object-fit: cover;
      object-fit: cover;
   border: 4px;
+  padding-bottom: 10;
 }
 
 .name {
@@ -403,13 +404,33 @@ i {
   left: 0;
 }
 
-.swiper-pagination-bullet {
+.swiper-pagination.bullet {
   color: #d94140;
   opacity: 1;
 }
 
-.swiper-pagination-bullet-active {
+.swiper-pagination.bullet {
   background-color: #d94140;
+}
+
+.local-bots {
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+
+.local {
+  display: inline-flexbox;
+  align-items: self-start;
+  color: #FFF;
+  background-color: #d34040;
+  margin-left: 40px;
+  margin-right: 45px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding: 4px 8px;
+  border-radius: 4px;
+  border: 0;
+  cursor: pointer;
 }
 
 @media screen and (max-width: 768px) {
