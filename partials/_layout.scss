@@ -39,8 +39,9 @@
 // FINALIZANDO O HOME E COMEÇANDO O HERO
 
 .hero{
+    
     color: $white-normal;
-    min-height: 50vh;
+    min-height: 200vh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -48,9 +49,10 @@
     padding: 14px;
 
     h1{
+       
         text-align:center;
         line-height: 150%;
-        max-width: 940px;
+        max-width: 640px;
         font-size: 46px;
     }
     p{
