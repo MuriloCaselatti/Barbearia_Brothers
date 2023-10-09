@@ -11,6 +11,15 @@
     position:inherit;
 }
 
+
+@media screen and (max-width: 768px) {
+    .header-logo img{
+        // min-height: 13vh;
+        max-width: 500px;
+    }
+}
+
+
 .bg-home:before{
     content: '';
     display: block;
@@ -107,6 +116,13 @@
     color: $white-normal;
 }
 
+.about img{
+    padding: 15px;
+    border-radius: 512px;
+    box-shadow: 0px -1px 17px -4px rgba(0, 0, 0, 0.9);
+}
+
+
 .about-content{
     display: flex;
     align-items: center;
@@ -183,7 +199,6 @@
     background-color: $white-normal;
     border-radius: 8px;
     box-shadow: 0px -1px 17px -4px rgba(0, 0, 0, 0.9);
-
     overflow: hidden;
 
     img{
@@ -218,15 +233,206 @@
     // Se tiver alguma funcionalidade de encaminhar o botao de valores para uma pagina de pagamentos, é só desabilitar o "cursor: default"
 }
 
+// ~
+
+
+
+.slide-container{
+    max-width: 1120px;
+    width: 100%;
+  
+    padding: 40px 0;
+}
+
+.slide-content{
+    margin:  0 40px;
+    box-shadow: 0px -1px 17px -4px rgba(0, 0, 0, 0.9);
+    overflow:hidden;
+    border-radius: 35px;
+    
+}
+
+.card{
+   
+    border-radius: 25px;
+    background-color:darkgray;
+}
+
+
+.image-content,
+.card-content{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 14px;
+    background-color: $white-normal;
+    z-index: 99;
+}
+
+.image-content{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 14px;
+    background-color: $white-normal;
+    z-index: 99;
+}
+
+.overlay{
+    position:absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: $white-dark;
+    border-radius: 25px 25px 0 25px;
+
+}
+
+.card-image{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    background-color: $white-normal;
+    border-radius: 8px;
+    box-shadow: 0px -1px 17px -4px rgba(0, 0, 0, 0.9);
+    overflow: hidden;
+
+    
+    img{
+        width: 100%;
+        max-width: 354px;
+        transition: transform 0.15s;
+    }
+}
+
+.card-img:hover{
+    transform: scale(1.2);
+    z-index: 1;
+}
+
+.card-image .card-img{
+    height: 250px;
+    width: auto;
+    object-fit: cover;
+    border: 4px;
+    
+}
+
+.name{
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.description{
+    align-items:end;
+    display: flex;
+    font-size: 7px;
+    text-align: center;
+}
+
+.button{
+    color: $white-normal;
+    background-color: $red-normal;
+    padding: 4px 8px;
+    border-radius: 4px;
+    border: 0;
+    cursor: default; 
+}
+
+.swiper-navBtn{
+    color: $red-normal;
+    transition: color 0.3 ease;
+}
+
+.swiper-navBtn:hover{
+    color: $white-normal;
+    background-color: $white-normal;
+    transition: transform 0.15s;
+    
+    
+}
+
+.swiper-navBtn::before,
+.swiper-navBtn::after{
+    font-size: 40px;
+    color: $black-light
+}
+
+.swiper-button-next{
+    right: 0;
+}
+
+.swiper-button-prev{
+    left: 0;
+}
+
+.swiper-pagination.bullet{
+    color: $red-normal;
+    opacity: 1;
+}
+
+.swiper-pagination.bullet{
+    background-color: $red-normal;
+}
+
+
+.local-bots{
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+.local{
+    display:inline-flexbox;
+    align-items:self-start;
+    color: $white-normal;
+    background-color:$red-light;
+    margin-left: 40px;
+    margin-right: 45px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 4px 8px;
+    border-radius: 4px;
+    border: 0;
+    cursor: pointer;
+
+}
+
+@media screen and (max-width: 768px) {
+
+    .slide-container{
+        margin: 0 10px;
+    }
+
+    .swiper-navBtn{
+        display: none;
+    }
+
+    
+}
+
 @media screen and (max-width: 768px) {
     .haircuts{
         flex-direction: column;
     }
-    
+
     .haircut img{
         max-width: 740px;
     }
+
+    .local{
+        padding-right:50px;
+        padding-left: 80px;
+        display:flex;
+    }
+    
 }
+
+// Estilizando o carrossel dos serviços
+
+/* Estilos para a seção de cortes de cabelo */
+
+/* Estilos para a div do carrossel */
 
 // FINALIZANDO A AREA DE SERVIÇOS
 
