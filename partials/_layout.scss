@@ -77,6 +77,34 @@
     animation: scaleButton 0.8s alternate infinite;
 }
 
+/* Estilos para os botões */
+.unidadeOption {
+    padding: 14px 28px;
+    color: white;
+    background-color: $red-light;
+    border: 0;
+    border-radius: 4px;
+    font-size: 18px;
+    font-weight: 600;
+    margin: 14px 0;
+    display: flex;
+    cursor: pointer; /* Adicionando um cursor de ponteiro para indicar que são botões clicáveis */
+    text-align: center; /* Alinhando o texto ao centro */
+    text-decoration: none; /* Removendo a decoração de texto para parecerem botões */
+    justify-content: center; /* Centralizando o conteúdo horizontalmente */
+    align-items: center; /* Centralizando o conteúdo verticalmente */
+    transition: background-color 0.3s ease; /* Adicionando uma transição de cor de fundo suave */
+    z-index: 99;
+  }
+  
+  /* Estilização quando o mouse passa por cima dos botões */
+  .unidadeOption:hover {
+    background-color: $red-dark; /* Alterando a cor de fundo ao passar o mouse */
+    animation: scaleButton 0.8s alternate infinite;
+    z-index: 99;
+  }
+  
+
 @keyframes scaleButton {
     from{
         transform: scale(1);
@@ -113,6 +141,7 @@
 //COMEÇANDO O SOBRE 
 
 .about{
+    padding-top: 85px;
     background-color: $primary-normal;
     overflow: hidden;
     color: $white-normal;
@@ -158,6 +187,9 @@
     .about-content{
         flex-direction: column;
     }    
+    .about{
+        padding-top: 0px;
+    }
 }
 
 // ESTIULO DA PAGINA DE SERVIÇOS
@@ -232,10 +264,8 @@
     border-radius: 4px;
     border: 0;
     cursor: default; 
-    // Se tiver alguma funcionalidade de encaminhar o botao de valores para uma pagina de pagamentos, é só desabilitar o "cursor: default"
 }
 
-// ~
 
 
 
@@ -322,6 +352,26 @@
     border: 4px;
     
     
+}
+
+.local-bots{
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+.local{
+    display: inline-flexbox;
+    align-items: self-start;
+    color: #FFF;
+    background-color: #d34040;
+    margin-left: 40px;
+    margin-right: 45px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 4px 8px;
+    border-radius: 4px;
+    border: 0;
+    cursor: pointer;
 }
 
 .name{
